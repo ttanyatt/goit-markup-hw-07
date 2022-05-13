@@ -67,7 +67,7 @@ p, h1, h2, h3, h4, h5, h6, ul, ol {
     margin: 0;
 }
 
-.main-btn {
+.btn {
     margin: auto;
     min-width: 200px;
     height: 50px;
@@ -165,7 +165,7 @@ align-items: center;
     opacity: 1;
 }
 
-.navigation__link.current::after {
+.navigation__link.navigation__link--current::after {
     content: '';
     position: absolute;
 
@@ -179,7 +179,7 @@ align-items: center;
     opacity: 1;
 }
 
-.current {
+.navigation__link--current {
     color: var(--accent-text-color);
 }
 
@@ -200,11 +200,11 @@ align-items: center;
     align-items: center;
 }
 
-.contacts-item:not(:last-child) {
+.contacts__item:not(:last-child) {
     margin-right: 50px;
 }
 
-.contacts-link {
+.contacts__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -219,16 +219,16 @@ align-items: center;
 
 
 
-.contacts-link:hover,
-.contacts-link:focus {
+.contacts__link:hover,
+.contacts__link:focus {
     color: var(--accent-text-color);
 }
 
-.contacts-text {
+.contacts__text {
     margin-left: 10px;
 }
 
-.contacts-icons {
+.contacts__icons {
     fill: currentColor;
 }
 
@@ -248,7 +248,7 @@ align-items: center;
     background-repeat: no-repeat;
     }
 
-.hero-title {
+.hero__title {
     max-width: 696px;
     margin: auto;
     margin-bottom: 30px;
@@ -263,31 +263,31 @@ align-items: center;
     
 }
 
-.hero .main-btn{
+.hero__btn{
     transition: background-color 250ms var(--timing-function),
     color 250ms var(--timing-function);
 }
 
-.hero .main-btn:hover,
-.hero .main-btn:focus,
-.hero .main-btn:active {
+.hero__btn:hover,
+.hero__btn:focus,
+.hero__btn:active {
     color: var(--accent-text-color);
     background-color: var(--btn-text-color);
 }
 
 /*----------------------FEATURES-----------------------*/
 
-.features-list {
+.features__list {
     display: flex;
     margin-left: -30px;
 }
 
-.features-item {
+.features__item {
     flex-basis: calc(100% / 4 - 30px);
     margin-left: 30px;
 }
 
-.features-item::before {
+.features__item::before {
     display: block;
     content: '';
     height: 120px;
@@ -848,11 +848,11 @@ fill: currentColor;
     color: rgba(117, 117, 117, 0.5);
 }
 
-.modal .main-btn {
+.modal__btn {
     transition: box-shadow 250ms var(--timing-function);
 }
 
-.modal .main-btn:hover {
+.modal__btn:hover {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
