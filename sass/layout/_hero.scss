@@ -25,14 +25,3 @@
     color: var(--hero-title-text-color);
 }
 
-.hero__btn {
-    transition: background-color 250ms var(--timing-function),
-        color 250ms var(--timing-function);
-}
-
-.hero__btn:hover,
-.hero__btn:focus,
-.hero__btn:active {
-    color: var(--accent-text-color);
-    background-color: var(--btn-text-color);
-}

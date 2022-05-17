@@ -2,11 +2,11 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--accent-bg-color);
-}
-
-.footer .container {
-    display: flex;
-    align-items: baseline;
+    
+    .container {
+            display: flex;
+            align-items: baseline;
+        }
 }
 
 .address {
@@ -30,11 +30,10 @@
 .address__contacts {
     color: var(--footer-contacts-color);
     transition: color 250ms var(--timing-function);
-}
-
-.address__contacts:hover,
-.address__contacts:focus {
-    color: var(--accent-text-color);
+    &:hover,
+    &:focus {
+            color: var(--accent-text-color);
+        }
 }
 
 .footer__social {
@@ -46,8 +45,6 @@
     margin-bottom: 20px;
     color: var(--footer-address-color);
 }
-
-
 
 .subscribe {
     display: flex;

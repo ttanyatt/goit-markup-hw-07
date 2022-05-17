@@ -1,9 +1,8 @@
 .header {
     border-bottom: 1px solid #ECECEC;
-}
-
-.header .container {
-    display: flex;
+    .container {
+        display: flex;
+    }
 }
 
 .navigation {
@@ -17,38 +16,32 @@
     margin-right: 93px;
 }
 
-.logo--dark-part {
-    color: var(--header-logo-color);
-}
-
 .navigation__list {
     display: flex;
 }
 
 .navigation__link {
     position: relative;
-
     padding: 32px 0px;
-
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
-}
 
-.navigation__link::after {
-    content: '';
-    position: absolute;
+    &::after {
+        content: '';
+        position: absolute;
 
-    display: block;
-    width: 100%;
-    height: 4px;
-    bottom: -1px;
-    border-radius: 2px;
-    background-color: var(--accent-text-color);
+        display: block;
+        width: 100%;
+        height: 4px;
+        bottom: -1px;
+        border-radius: 2px;
+        background-color: var(--accent-text-color);
 
-    opacity: 0;
-    transition: opacity 250ms var(--timing-function);
+        opacity: 0;
+        transition: opacity 250ms var(--timing-function);
+    }
 }
 
 .navigation__link:hover::after,
@@ -56,22 +49,22 @@
     opacity: 1;
 }
 
-.navigation__link.navigation__link--current::after {
-    content: '';
-    position: absolute;
-
-    display: block;
-    width: 100%;
-    height: 4px;
-    bottom: -1px;
-    border-radius: 2px;
-    background-color: var(--accent-text-color);
-
-    opacity: 1;
-}
-
 .navigation__link--current {
     color: var(--accent-text-color);
+    
+        .navigation__link &::after {
+            content: '';
+            position: absolute;
+    
+            display: block;
+            width: 100%;
+            height: 4px;
+            bottom: -1px;
+            border-radius: 2px;
+            background-color: var(--accent-text-color);
+            opacity: 1;
+    
+        }
 }
 
 .navigation__item:not(:last-child) {
@@ -104,12 +97,10 @@
     color: var(--secondary-text-color);
 
     transition: color 250ms var(--timing-function);
-}
-
-
-.contacts__link:hover,
-.contacts__link:focus {
-    color: var(--accent-text-color);
+        &:hover,
+        &:focus {
+            color: var(--accent-text-color);
+        }
 }
 
 .contacts__text {

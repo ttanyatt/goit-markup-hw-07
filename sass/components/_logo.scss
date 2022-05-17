@@ -5,12 +5,11 @@
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--accent-text-color);
-}
 
-.logo--dark-part {
-    color: var(--header-logo-color);
-}
-
-.logo--light-part {
-    color: var(--footer-logo-color);
+    &--dark-part {
+            color: var(--header-logo-color);
+        }
+    &--light-part {
+            color: var(--footer-logo-color);
+        }
 }

@@ -21,13 +21,12 @@
     border: none;
     transition: box-shadow 250ms var(--timing-function), background-color 250ms var(--timing-function),
         color 250ms var(--timing-function);
-}
-
-.filters__btn:hover,
-.filters__btn:focus {
-    color: var(--btn-text-color);
-    background-color: var(--accent-text-color);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-        0px 1px 2px rgba(0, 0, 0, 0.08),
-        0px 2px 2px rgba(0, 0, 0, 0.12);
+        &:hover,
+        &:focus {
+                color: var(--btn-text-color);
+                background-color: var(--accent-text-color);
+                box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+                    0px 1px 2px rgba(0, 0, 0, 0.08),
+                    0px 2px 2px rgba(0, 0, 0, 0.12);
+            }
 }
