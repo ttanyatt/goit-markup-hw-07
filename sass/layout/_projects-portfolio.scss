@@ -45,16 +45,12 @@
 
 .project-cards__title {
     margin-bottom: 4px;
-
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
+    @include font(null, 18px, 2, 0.06em);
     color: var(--primary-text-color);
 }
 
 .project-cards__text {
-    font-size: 16px;
-    line-height: 1.88;
+    @include font(null, 16px, 1.88, null);
     color: var(--secondary-text-color);
 }
 

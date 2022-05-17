@@ -23,9 +23,8 @@
 .navigation__link {
     position: relative;
     padding: 32px 0px;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+    @include font(500, null, 1.14, 0.02em);
+    
     color: var(--primary-text-color);
 
     &::after {
@@ -88,9 +87,7 @@
 }
 
 .contacts__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %align-list;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;

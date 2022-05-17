@@ -58,11 +58,9 @@
 
 .modal__title {
     margin-bottom: 12px;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
+    @include font (700, 20px, 1.15, 0.03em);
     text-align: center;
-    letter-spacing: 0.03em;
+    
 }
 
 .modal__field {
@@ -72,9 +70,7 @@
 .modal__label {
     display: block;
     margin-bottom: 4px;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
+    @include font (null, 12px, 1.17, 0.01em);
     color: var(--secondary-text-color);
 }
 
@@ -88,9 +84,9 @@
     cursor: pointer;
     transition: border-color 250ms var(--timing-function);
         
-    &:focus,
-         {
-            border-color: var(--accent-text-color);
+    &:focus 
+        {
+        border-color: var(--accent-text-color);
             
             &+.input__icon {
                     fill: var(--accent-text-color);
@@ -124,9 +120,7 @@
             border-color: var(--accent-text-color);
         }
     &::placeholder {
-            font-size: 12px;
-            line-height: 1.17;
-            letter-spacing: 0.01em;
+            @include font (null, 12px, 1.17, 0.01em);
             color: rgba(117, 117, 117, 0.5);
         }
 }
@@ -143,9 +137,7 @@
 
 
 .checkbox__text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %align-list;
     margin-top: 20px;
     margin-bottom: 30px;
     line-height: 1.71;
@@ -160,9 +152,7 @@
 }
 
 .checkbox__text span {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %align-list;
     width: 16px;
     height: 15px;
     border: 2px solid var(--primary-text-color);

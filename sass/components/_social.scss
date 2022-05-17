@@ -9,9 +9,7 @@
 }
 
 .social__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %align-list;
     width: 44px;
     height: 44px;
     background-color: var(--primary-bg-color);

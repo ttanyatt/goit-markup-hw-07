@@ -1,5 +1,4 @@
 .section__subtitle {
-    font-size: 14px;
-    line-height: 1.14;
+    @include font (null, 14px, 1.14, null)
     text-transform: uppercase;
 }

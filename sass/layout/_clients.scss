@@ -10,9 +10,7 @@
 }
 
 .clients__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %align-list;
     width: 170px;
     height: 92px;
     border: 1px solid var(--icons-color);
